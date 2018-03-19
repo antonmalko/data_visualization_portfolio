@@ -15,7 +15,7 @@ report <- report_NAs_count(dat,
 # participants
 report$plot
 
-ggplot2::ggsave(filename = "toy_plot.png", plot = report$plot)
+ggplot2::ggsave(filename = "toy_plot.png", plot = report$plot, units="mm", width = 240, height = 240)
 
 # the output also contains a data.frame with NA counts
 report$counts
