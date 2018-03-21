@@ -63,7 +63,7 @@ Indeed, this is the pattern we observe for sentences with *non-masculine* (i.e. 
 
 ## 4. Data exploration helper plots
 
-This plot comes analysis of eye-tracking while reading data. In such studies, people read sentences, while their eye movements are recorded. This plot is used during exploratory data analysis of such data and answers the question: did participants skip particular words, and if so, which participants and how often?
+This plot comes from an analysis of eye-tracking while reading data. In such studies, people read sentences, while their eye movements are recorded. This plot is used during exploratory data analysis of such data and answers the question: did participants skip particular words, and if so, which participants and how often?
 
 This plot is build using functions from [this](https://github.com/antonmalko/ettools) package of mine (in particular, `report_NAs_count()`). I do not include the full data used to generate this plot (it requires quite a big number of other pre-processing steps, specific to the study it comes from), but I do inlcude a toy example with a code which would generate a similar plot.
 
@@ -72,7 +72,7 @@ During the data analysis, the sentences are broken down to "regions" - groups of
 
 Before doing anything interesting with these data, we need to know some general facts about people's reading styles. E.g. did they skip some regions, and if so, which and how often? This is the question that this plot answers.
 
-The plot is a heatmap indicating the number of missing values per region per reading measure for each participant. Participants are enumerated along the Y axis; if a participant is missing from the data, there is a "gap" in the map (here, fpr participants 17, 18 and 31). Combinations of regions and reading measures are listed along the X axis (what specific regions are in this particular study is not that important). There are three reading measure computed for each region, that's why black lines delimit groups of three columns (corresponding to a single sentence region). Color intensity codes the number of missing values for a particular region, reading measure and participant; the numbers in the cell indicate the exact number of missing values. 
+The plot is a heatmap indicating the number of missing values per region per reading measure for each participant. Participants are enumerated along the Y axis; if a participant is missing from the data, there is a "gap" in the map (here, for participants 17, 18 and 31). Combinations of regions and reading measures are listed along the X axis (what specific regions are in this particular study is not that important). There are three reading measure computed for each region, that's why black lines delimit groups of three columns (corresponding to a single sentence region). Color intensity codes the number of missing values for a particular region, reading measure and participant; the numbers in the cell indicate the exact number of missing values. 
 
 For this particular plot, we are interested to see whether there are many skips in "ff" (first fixations - corresponding to the cases where people skipped over the region during initial skimming of the sentence) and in "tt" (total times - corresponding to the situations where people skipped a region entirely). These are the first and the third columns for each region, and since in this plot they mostly are white to light blue (corresponding to low numbers of skips), we conclude that the data is of good quality and we can proceed with further analyses. 
 </details>
