@@ -6,9 +6,23 @@ The code and data used to make the plots are available, when possible. For most 
 
 -------
 
-## 1. Exploring topic modeling
+## 1. Drug overdose deaths visualization
 
-Theis plot comes from an exploratory/learning project on topic modeling. Fuller description of the project, and the corresponding scripts can be found [here](https://github.com/antonmalko/convote_sotu_topics).
+This is a plot based on a CDC dataset about deaths caused by drug overdose, available [here](https://data.cdc.gov/NCHS/VSRR-Provisional-Drug-Overdose-Death-Counts/xkb8-kh2a). 
+
+The plot visualizes the proportion of drug related deaths to the overall number of deaths for each state. The top left facet represents a baseline: propotion of drug related deaths in a 12 months period from Sep 2014 to Aug 2015. Each of the next two plots represents the change in this proportion relative to the previous 12-month period. 
+
+Two things stand out: First, the states with high proportions of drug related deaths are mostly concentrated on the East and West of the country. Of course, this is were the population is concentrated, but since we are looking at proportions, the differences in the baseline for the population size would have been already accounted for to some degree. Second, the states on the East Coast, especially Maryland and West Virginia (as well as DC), seem to have the increase in the proportion of drug related deaths for the last couple of years.
+
+For a more detailed discussion of the dataset, see my repo [here](https://github.com/antonmalko/OD-deaths-visualization).
+
+![](drug_deaths_visualization/drug_deaths_change.png)
+
+-------
+
+## 2. Exploring topic modeling
+
+This plot comes from an exploratory/learning project on topic modeling. Fuller description of the project, and the corresponding scripts can be found [here](https://github.com/antonmalko/convote_sotu_topics).
 
 The plot represents the results of topic modeling of texts from a corpus of [Congressional speech data](https://www.cs.cornell.edu/home/llee/data/convote.html). Topic modelling is done using [Mallet](http://mallet.cs.umass.edu/). In this particular case, `Mallet` was trying to discover 10 topics, and 5 of them are shown on the plot. 
 
@@ -22,7 +36,7 @@ The model is pretty good at discovering sensible topics: e.g. topic 2 is quite c
 
 -------
 
-## 2. Reaction times in reading experiments
+## 3. Reaction times in reading experiments
 
 This example comes from a research project which investigates how number and gender are represented in the (linguistic) mind. In brief, the results may be taken to suggest that some nouns (plural nouns in English, masculine nouns in Russian have a more stable representation in memory, affecting how we understand sentences in real-time.  A full report on the project can be found [here](http://ling.umd.edu/~amalko/docs/Slioussar&Malko2016.pdf). 
 
@@ -47,7 +61,7 @@ Indeed, this is the pattern we observe for sentences with *non-masculine* (i.e. 
 
 ---------
 
-## 3. Data exploration helper plots
+## 4. Data exploration helper plots
 
 This plot comes analysis of eye-tracking while reading data. In such studies, people read sentences, while their eye movements are recorded. This plot is used during exploratory data analysis of such data and answers the question: did participants skip particular words, and if so, which participants and how often?
 
