@@ -12,7 +12,7 @@ This is a plot based on a CDC dataset about deaths caused by drug overdose, avai
 
 The plot visualizes the proportion of drug related deaths to the overall number of deaths for each state. The top left facet represents a baseline: propotion of drug related deaths in a 12 months period from Sep 2014 to Aug 2015. Each of the next two plots represents the change in this proportion relative to the previous 12-month period. 
 
-Two things stand out: First, the states with high proportions of drug related deaths are mostly concentrated on the East and West of the country. Of course, this is were the population is concentrated, but since we are looking at proportions, the differences in the baseline for the population size would have been already accounted for to some degree. Second, the states on the East Coast, especially Maryland and West Virginia (as well as DC), seem to have the increase in the proportion of drug related deaths for the last couple of years.
+Two things stand out: First, the states with high proportions of drug related deaths are mostly concentrated on the East and West of the country. Of course, this is were the population is concentrated, but since we are looking at proportions, the differences in the baseline for the population size would have been already accounted for to some degree. Second, the states on the East Coast, especially Maryland and West Virginia (as well as DC), seem to have an increase in the proportion of drug related deaths for the last couple of years.
 
 For a more detailed discussion of the dataset, see my repo [here](https://github.com/antonmalko/OD-deaths-visualization).
 
